@@ -1,0 +1,19 @@
+{
+    "tables": [
+      { "id": "1", "nameCustomer": "a title", "status": false , "quantity" : 4 },
+      { "id": "2", "nameCustomer": "a title", "status": false , "quantity" : 4 },
+      { "id": "3", "nameCustomer": "a title", "status": false , "quantity" : 4 },
+      { "id": "4", "nameCustomer": "a title", "status": false , "quantity" : 4 },
+      { "id": "5", "nameCustomer": "a title", "status": false , "quantity" : 4 },
+      { "id": "6", "nameCustomer": "a title", "status": false , "quantity" : 4 },
+      { "id": "7", "nameCustomer": "a title", "status": false , "quantity" : 4 },
+      { "id": "8", "nameCustomer": "a title", "status": false , "quantity" : 4 }
+    ],
+    "comments": [
+      { "id": "1", "text": "a comment about post 1", "postId": "1" },
+      { "id": "2", "text": "another comment about post 1", "postId": "1" }
+    ],
+    "profile": {
+      "name": "typicode"
+    }
+  }

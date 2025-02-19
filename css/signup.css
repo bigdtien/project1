@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(215, 146, 157);
+    height: 100vh;
+    display: flex;
+    .login{
+        margin: auto;
+        width: 40%;
+        background-color: white;
+        padding: 25px;
+        border-radius: 15px ;
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: end;
+        }
+        .login-box{
+            button{
+                background-color: orange;
+                width: 100%;
+                border-radius: 8px;
+                border: none;
+                padding: 8px;
+            }
+        }
+        .signup-box{
+            text-align: center;
+            padding: 15px;
+            margin-top: 10px;
+        }
+    }
+}

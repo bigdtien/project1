@@ -24,32 +24,40 @@
         <div class="admin">
             <div class="left">
                 <header>
-                    <h3>PINK STORE</h3>
-                    <div class="icon"><i class="fa-solid fa-arrow-left"></i></div>
+                    <i class="fa-solid fa-house item"></i>
+                    <h3 class="item hidden">PINK STORE</h3>
+                    <div class="icon">
+                        <i class="fa-solid fa-list item"></i>
+                        <i class="fa-solid fa-arrow-left item hidden"></i>
+                    </div>
                 </header>
+                <div class="list-menu">
+
+                
                 <li>
                     <i class="fa-solid fa-gauge"></i>
-                    <span>DASHBOARD</span>
+                    <span class="item hidden chose">DASHBOARD</span>
                 </li>
-                <h4>
+                <h4 class="item hidden">
                     UI ELEMENTS
                 </h4>
                 <li>
                     <i class="fa-solid fa-table"></i>
-                    <span>RESERVATION</span>
+                    <span class="item hidden chose">RESERVATION</span>
                 </li>
                 <li>
                     <i class="fa-solid fa-bowl-food"></i>
-                    <span>ORDER FOOD</span>
+                    <span class="item hidden chose">ORDER FOOD</span>
                 </li>
                 <li>
                     <i class="fa-solid fa-credit-card"></i>
-                    <span>PAY BILL</span>
+                    <span class="item hidden chose">PAY BILL</span>
                 </li>
                 <li>
                     <i class="fa-solid fa-user"></i>
-                    <span>INFORMATION</span>
+                    <span class="item hidden chose">INFORMATION</span>
                 </li>
+            </div>
             </div>
             <div class="right">
                 <header>
@@ -60,59 +68,136 @@
                     </div>
                     <div class="user">
                         <i class="fa-regular fa-user"></i>
+                        <ul class="user-box hidden">
+                            <li>Username</li>
+                            <li>My Profile</li>
+                            <li>Setting</li>
+                            <li>Logout</li>
+                        </ul>
                     </div>
                 </header>
                 <main >
-                    <div class="row row-cols-xl-4 row-cols-md-2 row-cols-1 g-4">
-                        <div class="col">
-                            <div class="card" >
-                                <span>1</span>
-                                <img src="https://cdn-icons-png.flaticon.com/512/2251/2251855.png" class="card-img-top w-50 mx-auto" alt="...">
-                                <div class="card-body">
-                                    <button type="button" class="btn btn-success">
-                                        <i class="fa-solid fa-plus"></i>
-                                        ADD
-                                    </button>
-                                    <button type="button" class="btn btn-danger">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                        CART
-                                    </button>
-                                </div>
-                            </div>    
-                        </div>
-                        <div class="col">
-                            <div class="card" >
-                                <img src="https://cdn-icons-png.flaticon.com/512/2251/2251855.png" class="card-img-top w-50 mx-auto" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>    
-                        </div>
-                        <div class="col">
-                            <div class="card" >
-                                <span>2</span>
-                                <img src="https://cdn-icons-png.flaticon.com/512/2251/2251855.png" class="card-img-top w-50 mx-auto" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>    
-                        </div>
-                        <div class="col">
-                            <div class="card" >
-                                <span>3</span>
-                                <img src="https://cdn-icons-png.flaticon.com/512/2251/2251855.png" class="card-img-top w-50 mx-auto" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>    
-                        </div>
+                    <div class="box">DASHBOARD</div>
+                    <div class="box">
+                        <div class="row row-cols-xl-4 row-cols-md-2 row-cols-1 g-4">
+                            <div class="col">
+                                <div class="card" >
+                                    <span>1</span>
+                                    <img src="https://cdn-icons-png.flaticon.com/512/2251/2251855.png" class="card-img-top w-50 mx-auto" alt="...">
+                                    <div class="card-body">
+                                        <button type="button" class="btn btn-success">
+                                            <i class="fa-solid fa-plus"></i>
+                                            ADD
+                                        </button>
+                                        <button type="button" class="btn btn-danger">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            CART
+                                        </button>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="col">
+                                <div class="card" >
+                                    <span>2</span>
+                                    <img src="https://cdn-icons-png.flaticon.com/512/2251/2251855.png" class="card-img-top w-50 mx-auto" alt="...">
+                                    <div class="card-body">
+                                        <button type="button" class="btn btn-success">
+                                            <i class="fa-solid fa-plus"></i>
+                                            ADD
+                                        </button>
+                                        <button type="button" class="btn btn-danger">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            CART
+                                        </button>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="col">
+                                <div class="card" >
+                                    <span>3</span>
+                                    <img src="https://cdn-icons-png.flaticon.com/512/2251/2251855.png" class="card-img-top w-50 mx-auto" alt="...">
+                                    <div class="card-body">
+                                        <button type="button" class="btn btn-success">
+                                            <i class="fa-solid fa-plus"></i>
+                                            ADD
+                                        </button>
+                                        <button type="button" class="btn btn-danger">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            CART
+                                        </button>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="col">
+                                <div class="card" >
+                                    <span>4</span>
+                                    <img src="https://cdn-icons-png.flaticon.com/512/2251/2251855.png" class="card-img-top w-50 mx-auto" alt="...">
+                                    <div class="card-body">
+                                        <button type="button" class="btn btn-success">
+                                            <i class="fa-solid fa-plus"></i>
+                                            ADD
+                                        </button>
+                                        <button type="button" class="btn btn-danger">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                            CART
+                                        </button>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="col">
+                                <div class="card" >
+                                    <span>5</span>
+                                    <img src="https://cdn-icons-png.flaticon.com/512/2251/2251855.png" class="card-img-top w-50 mx-auto" alt="...">
+                                    <div class="card-body">
+                                        <button type="button" class="btn btn-warning">
+                                            <i class="fa-solid fa-table"></i>
+                                            Booking
+                                        </button>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="col">
+                                <div class="card" >
+                                    <span>6</span>
+                                    <img src="https://cdn-icons-png.flaticon.com/512/2251/2251855.png" class="card-img-top w-50 mx-auto" alt="...">
+                                    <div class="card-body">
+                                        <button type="button" class="btn btn-warning">
+                                            <i class="fa-solid fa-table"></i>
+                                            Booking
+                                        </button>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="col">
+                                <div class="card" >
+                                    <span>7</span>
+                                    <img src="https://cdn-icons-png.flaticon.com/512/2251/2251855.png" class="card-img-top w-50 mx-auto" alt="...">
+                                    <div class="card-body">
+                                        <button type="button" class="btn btn-warning">
+                                            <i class="fa-solid fa-table"></i>
+                                            Booking
+                                        </button>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="col">
+                                <div class="card" >
+                                    <span>8</span>
+                                    <img src="https://cdn-icons-png.flaticon.com/512/2251/2251855.png" class="card-img-top w-50 mx-auto" alt="...">
+                                    <div class="card-body">
+                                        <button type="button" class="btn btn-warning">
+                                            <i class="fa-solid fa-table"></i>
+                                            Booking
+                                        </button>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>        
                     </div>
+                    <div class="box">ORDER FOOD</div>
+                    <div class="box">PAY BILL</div>
+                    <div class="box">INFORMATION</div>
+                    
                 </main>
             </div>
         </div>
@@ -127,5 +212,8 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+        <script src="../js/home.js"></script>
+        <script src="../js/api.js"></script>
+        <script src="../js/getTables.js"></script>
     </body>
 </html>

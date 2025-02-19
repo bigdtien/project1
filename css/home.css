@@ -4,7 +4,12 @@
     box-sizing: border-box;
     list-style: none;
 }
-
+.hidden {
+    display: none !important;
+}
+.box{
+    display: none;
+}
 .admin{
     display: flex;
     height: 100vh;
@@ -62,6 +67,24 @@
                 display: flex;
                 gap: 45px;
             }
+            .user{
+                position: relative;
+                .user-box{
+                    background-color: white;
+                    position: absolute;
+                    transform: translate(-75%);
+                    z-index: 1;
+                    padding: 0;
+                    li{
+                        padding: 15px;
+                        white-space: nowrap;
+                        &:hover{
+                            background-color: gray;
+                            color: red;
+                        }
+                    }
+                }
+            }
         }
         main{
             background-color: rgb(215, 146, 157);
@@ -85,6 +108,24 @@
                     justify-content: space-evenly;
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    
+}
+@media screen and (max-width: 768px)  {
+    .admin{
+        display: block;
+        header{
+            .icon{
+                transform: translate(-50%) !important;
+            }
+        }
+        .list-menu{
+            display: none;
         }
     }
 }
