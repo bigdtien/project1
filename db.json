@@ -1,19 +1,107 @@
 {
-    "tables": [
-      { "id": "1", "nameCustomer": "a title", "status": false , "quantity" : 4 },
-      { "id": "2", "nameCustomer": "a title", "status": false , "quantity" : 4 },
-      { "id": "3", "nameCustomer": "a title", "status": false , "quantity" : 4 },
-      { "id": "4", "nameCustomer": "a title", "status": false , "quantity" : 4 },
-      { "id": "5", "nameCustomer": "a title", "status": false , "quantity" : 4 },
-      { "id": "6", "nameCustomer": "a title", "status": false , "quantity" : 4 },
-      { "id": "7", "nameCustomer": "a title", "status": false , "quantity" : 4 },
-      { "id": "8", "nameCustomer": "a title", "status": false , "quantity" : 4 }
-    ],
-    "comments": [
-      { "id": "1", "text": "a comment about post 1", "postId": "1" },
-      { "id": "2", "text": "another comment about post 1", "postId": "1" }
-    ],
-    "profile": {
-      "name": "typicode"
+  "tables": [
+    {
+      "id": "1",
+      "nameCustomer": "adadd",
+      "status": true,
+      "quantity": "4"
+    },
+    {
+      "id": "2",
+      "nameCustomer": "a title",
+      "status": true,
+      "quantity": 4
+    },
+    {
+      "id": "3",
+      "nameCustomer": "a title",
+      "status": false,
+      "quantity": 4
+    },
+    {
+      "id": "4",
+      "nameCustomer": "a title",
+      "status": true,
+      "quantity": 4
+    },
+    {
+      "id": "5",
+      "nameCustomer": "a title",
+      "status": false,
+      "quantity": 4
+    },
+    {
+      "id": "6",
+      "nameCustomer": "dada",
+      "status": true,
+      "quantity": "4"
+    },
+    {
+      "id": "7",
+      "nameCustomer": "a title",
+      "status": false,
+      "quantity": 4
+    },
+    {
+      "id": "8",
+      "nameCustomer": "a title",
+      "status": false,
+      "quantity": 4
     }
+  ],
+  "foods": [
+    {
+      "id": "1",
+      "nameFood": "a comment about post 1",
+      "price": 10,
+      "img": "https://www.allrecipes.com/thmb/YtQTzQMY-qxrqBJvUBx_CzAj7mk=/0x512/filters:no_upscale():max_bytes(150000):strip_icc()/8805-CrispyFriedChicken-mfs-3x2-072-d55b8406d4ae45709fcdeb58a04143c2.jpg"
+    },
+    {
+      "id": "1",
+      "nameFood": "a comment about post 1",
+      "price": 10,
+      "img": "vfdbfdb"
+    },
+    {
+      "id": "1",
+      "nameFood": "a comment about post 1",
+      "price": 10,
+      "img": "vfdbfdb"
+    },
+    {
+      "id": "1",
+      "nameFood": "a comment about post 1",
+      "price": 10,
+      "img": "vfdbfdb"
+    },
+    {
+      "id": "1",
+      "nameFood": "a comment about post 1",
+      "price": 10,
+      "img": "vfdbfdb"
+    },
+    {
+      "id": "1",
+      "nameFood": "a comment about post 1",
+      "price": 10,
+      "img": "vfdbfdb"
+    },
+    {
+      "id": "1",
+      "nameFood": "a comment about post 1",
+      "price": 10,
+      "img": "vfdbfdb"
+    },
+    {
+      "id": "1",
+      "nameFood": "a comment about post 1",
+      "price": 10,
+      "img": "vfdbfdb"
+    }
+
+
+  ],
+  "profile": {
+    "name": "typicode"
   }
+}
