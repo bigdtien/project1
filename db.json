@@ -52,48 +52,48 @@
   "foods": [
     {
       "id": "1",
-      "nameFood": "a comment about post 1",
+      "nameFood": "Chicken",
       "price": 10,
-      "img": "https://www.allrecipes.com/thmb/YtQTzQMY-qxrqBJvUBx_CzAj7mk=/0x512/filters:no_upscale():max_bytes(150000):strip_icc()/8805-CrispyFriedChicken-mfs-3x2-072-d55b8406d4ae45709fcdeb58a04143c2.jpg"
+      "img": "https://media.istockphoto.com/id/610223718/photo/fried-chicken-strips.jpg?s=612x612&w=0&k=20&c=Hz-vRI28HOEnVwcnmkXpu3Wt-fCbOH9aEqys39o3dFI="
     },
     {
-      "id": "1",
-      "nameFood": "a comment about post 1",
-      "price": 10,
-      "img": "vfdbfdb"
-    },
-    {
-      "id": "1",
+      "id": "2",
       "nameFood": "a comment about post 1",
       "price": 10,
       "img": "vfdbfdb"
     },
     {
-      "id": "1",
+      "id": "3",
       "nameFood": "a comment about post 1",
       "price": 10,
       "img": "vfdbfdb"
     },
     {
-      "id": "1",
+      "id": "4",
       "nameFood": "a comment about post 1",
       "price": 10,
       "img": "vfdbfdb"
     },
     {
-      "id": "1",
+      "id": "5",
       "nameFood": "a comment about post 1",
       "price": 10,
       "img": "vfdbfdb"
     },
     {
-      "id": "1",
+      "id": "6",
       "nameFood": "a comment about post 1",
       "price": 10,
       "img": "vfdbfdb"
     },
     {
-      "id": "1",
+      "id": "7",
+      "nameFood": "a comment about post 1",
+      "price": 10,
+      "img": "vfdbfdb"
+    },
+    {
+      "id": "8",
       "nameFood": "a comment about post 1",
       "price": 10,
       "img": "vfdbfdb"
