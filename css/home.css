@@ -189,6 +189,18 @@ p{
                     gap: 5px;
                 }
             }
+            .table_choose{
+                display: flex;
+                gap: 5px;
+                button{
+                    background-color: var(--bg-red);
+                    color: white;
+                    padding: 3px;
+                    border: none;
+                    border-radius: 6px;
+                }
+
+            }
         }
     }
 }

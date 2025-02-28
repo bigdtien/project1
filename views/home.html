@@ -80,11 +80,9 @@
                     <div class="food_header">
                         <div class="table_order">
                             <p>Choose a table</p>
-                            <select>
-                                <option value="1">Choose a table</option>
-                                <option value="2">1</option>
-                                <option value="3">2</option>
-                                <option value="4">3</option>
+                            <select id="select_table">
+                                <option value="">Choose a table</option>
+
                             </select>
                             <button>Order</button>
                         </div>
@@ -93,14 +91,55 @@
                             <button>Search</button>
                         </div>
                         <div class="add_food">
-                            <button>Add Food</button>
+                            <button data-bs-toggle="modal" data-bs-target="#addFood">Add Food</button>
                         </div>
                     </div>
                     <div class="row row-cols-xl-4 row-cols-md-2 row-cols-1 g-4 foods">
 
                     </div>
                 </div>
-                <div class="box">PAY BILL</div>
+                <div class="box">
+                    <div class="table_choose">
+                        <p>Choose a table</p>
+                        <select id="select_table2">
+                            <option value="">Choose a table</option>
+
+                        </select>
+                        <button>Pay Bill</button>
+                    </div>
+                    <div class="bill_table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                    <th scope="col">Handle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td colspan="2">Larry the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
                 <div class="box">INFORMATION</div>
             </main>
             <!-- Modal Booking -->
@@ -133,6 +172,70 @@
                     </div>
                 </div>
             </div>
+            <!-- Modal Add Food -->
+            <div class="modal fade" id="addFood" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">ADD FOOD</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="submit-food">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="nameFood" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Price</label>
+                                    <input type="number" class="form-control" id="price">
+                                </div>
+                                <div class="mb-3">
+                                    <input class="form-control" type="file" id="formFile">
+                                    <img src="" class="w-45 mt-3" id="showImgFood" alt="">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="showTableFood" tabindex="-1" aria-labelledby="showTableFood" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Image</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="cartFood">
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Pay Bills</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -142,11 +245,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+    <script src="../js/UploadtoCloudinary.js"></script>
     <script src="../js/valididation.js"></script>
     <script src="../js/home.js"></script>
     <script src="../js/api.js"></script>
     <script src="../js/getTables.js"></script>
     <script src="../js/orderFood.js"></script>
+    <script src="../js/getFoods.js"></script>
+    <script src="../js/payBill.js"></Script>
 </body>
 
 </html>

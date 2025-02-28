@@ -58,50 +58,73 @@
     },
     {
       "id": "2",
-      "nameFood": "a comment about post 1",
-      "price": 10,
-      "img": "vfdbfdb"
+      "nameFood": "Beef Steak",
+      "price": "129",
+      "img": "https://res.cloudinary.com/dmnrqmyy3/image/upload/v1740474738/vl87t8ffhbl5b170tnhk.jpg"
     },
     {
       "id": "3",
-      "nameFood": "a comment about post 1",
-      "price": 10,
-      "img": "vfdbfdb"
+      "nameFood": "Dimsum",
+      "price": "79",
+      "img": "https://res.cloudinary.com/dmnrqmyy3/image/upload/v1740474905/rmw71xaz5nwmpcysx8vq.png"
     },
     {
       "id": "4",
-      "nameFood": "a comment about post 1",
-      "price": 10,
-      "img": "vfdbfdb"
+      "nameFood": "Fried Chicken",
+      "price": "119",
+      "img": "https://res.cloudinary.com/dmnrqmyy3/image/upload/v1740474988/hpylzqebbawa2ttseaoo.jpg"
     },
     {
       "id": "5",
-      "nameFood": "a comment about post 1",
-      "price": 10,
-      "img": "vfdbfdb"
+      "nameFood": "Pizza",
+      "price": "79",
+      "img": "https://res.cloudinary.com/dmnrqmyy3/image/upload/v1740477211/j2izrvnbyal8zzlnvr69.png"
     },
     {
       "id": "6",
-      "nameFood": "a comment about post 1",
-      "price": 10,
-      "img": "vfdbfdb"
-    },
-    {
-      "id": "7",
-      "nameFood": "a comment about post 1",
-      "price": 10,
-      "img": "vfdbfdb"
-    },
-    {
-      "id": "8",
-      "nameFood": "a comment about post 1",
-      "price": 10,
-      "img": "vfdbfdb"
+      "nameFood": "Salad",
+      "price": "49",
+      "img": "https://res.cloudinary.com/dmnrqmyy3/image/upload/v1740477403/luouypl6qhxalengkn8s.webp"
     }
-
-
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "orders": [
+    {
+      "id": "1",
+      "bill": [
+        {
+          "idFood": "1",
+          "quantity": 4
+        },
+        {
+          "idFood": "2",
+          "quantity": 4
+        },
+        {
+          "idFood": "3",
+          "quantity": 1
+        },
+        {
+          "idFood": "6",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "bill": [
+        {
+          "idFood": "1",
+          "quantity": 1
+        },
+        {
+          "idFood": "2",
+          "quantity": 1
+        },
+        {
+          "idFood": "4",
+          "quantity": 1
+        }
+      ]
+    }
+  ]
 }

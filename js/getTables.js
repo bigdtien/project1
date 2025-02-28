@@ -4,11 +4,18 @@ async function showTables() {
 
     const tables = document.querySelector(".tables");
 
+    const select = document.getElementById("select_table")
+
     data.forEach((element, index) => {
+        
+        if (element.status){
+            select.innerHTML += `<option value="${element.id}">Table ${element.id}</option>`
+        }
+
         const status = element.status ? `<button type="button" class="btn btn-success">
                                             <i class="fa-solid fa-plus"></i>
                                             ADD
-                                        </button>  <button type="button" class="btn btn-danger">
+                                        </button>  <button onClick=showCart(${element.id}) type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#showTableFood">
                                             <i class="fa-solid fa-cart-shopping"></i>
                                             CART
                                         </button>` : `<button onClick=getId(${element.id}) type="button" class="btn btn-warning " data-bs-toggle="modal" data-bs-target="#booking">

@@ -1,5 +1,6 @@
 const urlTables = "http://localhost:3000/tables";
 const urlFoods = "http://localhost:3000/foods";
+const urlOrders = "http://localhost:3000/orders";
 
 async function fetchData(url) {
   try {
@@ -37,4 +38,28 @@ async function edit(url, order) {
   } catch (error) {
     console.error('Lỗi khi cập nhật đơn hàng:', error);
   }
+}
+
+function deleted(url,id) {
+  fetch(`${url}/${id}`, {
+      method: 'DELETE',
+    })
+    .then(response => response.json())
+    .then(data => {      
+    })
+    .catch(error => console.error('Lỗi khi cập nhật đơn hàng', error));
+}
+
+function add(url,object) {
+  fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(object),
+  })
+    .then(response => response.json())
+    .then(data => {
+    })
+    .catch(error => console.error('Error creating post:', error));
 }
